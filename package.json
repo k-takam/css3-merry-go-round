@@ -5,7 +5,8 @@
   "scripts": {
     "watch": "npm run watch-jade & npm run watch-sass",
     "watch-jade": "jade --watch src/ --out dist/",
-    "watch-sass": "sass --watch src/sass:dist/css --style compressed --sourcemap=none"
+    "watch-sass": "sass --watch src/sass:dist/css --style compressed --sourcemap=none",
+    "deploy": "git subtree push --prefix dist/ origin gh-pages"
   },
   "repository": {
     "type": "git",
